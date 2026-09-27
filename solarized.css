@@ -1,0 +1,31 @@
+:root {
+	color-scheme: light;
+
+	--background: #eee8d5;
+	--background-muted: #e3dcc4;
+	--foreground: #073642;
+	--foreground-muted: #586e75;
+	--border: #d3cbb7;
+	--link: #1a6aa2;
+	--error: #c42a27;
+	--warning: #7f6000;
+	--accent: #268bd2;
+
+	--editor-background: #fdf6e3;
+	--editor-foreground: #586e75;
+	--editor-foreground-muted: #657b83;
+
+	--editor-background-muted: #eee8d5;
+	--blockquote-border: #93a1a1;
+
+	--syntax-keyword: #b58900;
+	--syntax-string: #2aa198;
+	--syntax-number: #d33682;
+	--syntax-function: #268bd2;
+	--syntax-constant: #dc322f;
+	--syntax-type: #859900;
+}
+
+.deft-settings-page {
+	--background: #fdf6e3;
+}

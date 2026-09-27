@@ -1,0 +1,26 @@
+:root {
+	color-scheme: light;
+
+	--background: #ffffff;
+	--background-muted: #f5f5f5;
+	--foreground: #1a1a1a;
+	--foreground-muted: #6b6b6b;
+	--border: #e0e0e0;
+	--link: #2b6cb0;
+
+	--error: #c0392b;
+	--warning: #8f5e00;
+
+	--highlight-background: #ffeb3b;
+
+	--syntax-keyword: #7c3aed;
+	--syntax-string: #2f7d3f;
+	--syntax-number: #a84e08;
+	--syntax-function: #2b6cb0;
+	--syntax-constant: #ad3da4;
+	--syntax-type: #0f766e;
+
+	--box-shadow-large:
+		0 1px 2px rgba(15, 15, 15, 0.04), 0 8px 24px rgba(15, 15, 15, 0.12),
+		0 24px 48px rgba(15, 15, 15, 0.08);
+}

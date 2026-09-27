@@ -1,0 +1,118 @@
+:root {
+	color-scheme: light;
+
+	--editor-font-family:
+		'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, 'Noto Serif', 'DejaVu Serif',
+		serif;
+	--editor-font-size: 17px;
+	--editor-line-height: 1.65;
+
+	--background: #ece9e2;
+	--background-muted: #e2ded4;
+	--foreground: #1f1d1a;
+	--foreground-muted: #6b665c;
+	--border: #d5d0c5;
+	--link: #8b2f1c;
+	--error: #a3271b;
+	--warning: #7f5e10;
+	--accent: #7a2e2a;
+	--accent-foreground: #fbf8f1;
+
+	--editor-background: #fbf8f1;
+
+	--border-radius-small: 2px;
+	--border-radius-medium: 3px;
+	--border-radius-large: 4px;
+
+	--heading-1-font-size: 2em;
+	--heading-2-font-size: 1.5em;
+	--heading-3-font-size: 1.2em;
+	--heading-4-font-size: 1.05em;
+	--markup-foreground: #857f74;
+	--hr-border: #c9c3b6;
+	--blockquote-font-style: italic;
+	--blockquote-foreground: #4a463f;
+	--blockquote-border: #c9c3b6;
+	--blockquote-border-width: 2px;
+	--code-font-size: 0.85em;
+	--editor-background-muted: #ece9e2;
+
+	--syntax-string: #2a7038;
+	--syntax-number: #a04a08;
+	--syntax-function: #2560a0;
+	--syntax-constant: #9c3694;
+}
+
+.deft-sidebar {
+	--background: #e4e0d7;
+	--background-active: #d8d3c7;
+	--border: #cfc9bc;
+}
+.deft-popover,
+.deft-modal {
+	--background: #fbf8f1;
+}
+
+.deft-tree,
+.deft-panel,
+.deft-breadcrumbs,
+.deft-statusbar,
+.deft-tab {
+	font-family: var(--editor-font-family);
+}
+.deft-tree-row,
+.deft-panel-item {
+	font-size: 14px;
+}
+.deft-tree-folder,
+.deft-tree-project,
+.deft-tab {
+	font-variant-caps: all-small-caps;
+	letter-spacing: 0.05em;
+}
+.deft-tab {
+	font-size: 14px;
+	font-weight: 600;
+}
+.deft-tab.active {
+	background: transparent;
+	box-shadow: inset 0 -2px 0 var(--accent);
+	border-radius: 0;
+}
+
+.deft-tree-row.selected,
+.deft-panel-item.active {
+	box-shadow: inset 3px 0 0 var(--accent);
+	border-radius: 0;
+}
+
+.deft-note-title {
+	text-align: center;
+	font-weight: 400;
+	letter-spacing: 0.01em;
+	font-size: calc(var(--editor-font-size) * 1.9);
+}
+
+.deft-statusbar {
+	font-style: italic;
+}
+
+.deft-button {
+	border: 1px solid color-mix(in srgb, var(--foreground-muted) 28%, var(--border));
+	background: var(--background);
+	color: var(--foreground);
+}
+.deft-button-primary {
+	background: var(--accent);
+	border-color: var(--accent);
+	color: var(--accent-foreground);
+}
+.deft-button-primary:disabled {
+	background: var(--border);
+	border-color: var(--border);
+	color: var(--foreground-muted);
+}
+.deft-input {
+	background: var(--editor-background);
+	border: 1px solid var(--border);
+}

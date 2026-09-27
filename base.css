@@ -1,0 +1,115 @@
+:root {
+	--font-family:
+		'Inter Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+		sans-serif;
+	--font-family-monospace:
+		'Lilex Variable', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+	--border-radius-small: 4px;
+	--border-radius-medium: 6px;
+	--border-radius-large: 10px;
+
+	--icon-stroke-width: 1.5;
+
+	--editor-font-family: var(--font-family);
+	--editor-font-size: 16px;
+	--editor-line-height: 1.6;
+	--editor-font-weight: 400;
+
+	--editor-background: var(--background);
+	--editor-foreground: var(--foreground);
+	--editor-foreground-muted: var(--foreground-muted);
+	--editor-border: var(--border);
+	--editor-background-muted: var(--background-muted);
+
+	--background-active: var(--background-muted);
+
+	--overlay-background: rgba(0, 0, 0, 0.3);
+
+	--box-shadow-medium: 0 1px 2px rgba(15, 15, 15, 0.06), 0 6px 16px rgba(15, 15, 15, 0.12);
+	--box-shadow-small: 0 1px 4px rgba(0, 0, 0, 0.2);
+
+	--accent: #a04f6e;
+	--accent-tint: color-mix(in srgb, var(--accent) 16%, transparent);
+	--accent-tint-hover: color-mix(in srgb, var(--accent) 8%, transparent);
+	--accent-foreground: #ffffff;
+
+	--heading-font-family: var(--editor-font-family);
+	--heading-font-weight: 700;
+	--heading-foreground: var(--editor-foreground);
+	--heading-border: var(--editor-border);
+	--heading-border-width: 0;
+	--heading-1-font-size: 1.6em;
+	--heading-2-font-size: 1.4em;
+	--heading-3-font-size: 1.25em;
+	--heading-4-font-size: 1.1em;
+	--heading-5-font-size: 1em;
+	--heading-6-font-size: 1em;
+	--heading-1-font-weight: var(--heading-font-weight);
+	--heading-2-font-weight: var(--heading-font-weight);
+	--heading-3-font-weight: var(--heading-font-weight);
+	--heading-4-font-weight: var(--heading-font-weight);
+	--heading-5-font-weight: var(--heading-font-weight);
+	--heading-6-font-weight: var(--heading-font-weight);
+	--heading-1-foreground: var(--heading-foreground);
+	--heading-2-foreground: var(--heading-foreground);
+	--heading-3-foreground: var(--heading-foreground);
+	--heading-4-foreground: var(--heading-foreground);
+	--heading-5-foreground: var(--heading-foreground);
+	--heading-6-foreground: var(--heading-foreground);
+	--heading-1-padding-top: 0;
+	--heading-2-padding-top: 0;
+	--heading-3-padding-top: 0;
+	--heading-4-padding-top: 0;
+	--heading-5-padding-top: 0;
+	--heading-6-padding-top: 0;
+	--heading-1-border: var(--heading-border);
+	--heading-2-border: var(--heading-border);
+	--heading-3-border: var(--heading-border);
+	--heading-4-border: var(--heading-border);
+	--heading-5-border: var(--heading-border);
+	--heading-6-border: var(--heading-border);
+	--heading-1-border-width: var(--heading-border-width);
+	--heading-2-border-width: var(--heading-border-width);
+	--heading-3-border-width: var(--heading-border-width);
+	--heading-4-border-width: var(--heading-border-width);
+	--heading-5-border-width: var(--heading-border-width);
+	--heading-6-border-width: var(--heading-border-width);
+
+	--markup-foreground: var(--editor-foreground-muted);
+	--hr-border: var(--editor-border);
+
+	--blockquote-foreground: var(--editor-foreground);
+	--blockquote-font-style: normal;
+	--blockquote-border: color-mix(in srgb, var(--editor-foreground-muted) 28%, var(--editor-border));
+	--blockquote-border-width: 3px;
+
+	--code-font-family: var(--font-family-monospace);
+	--code-font-size: 0.9em;
+	--code-background: var(--editor-background-muted);
+	--code-inline-background: var(--code-background);
+	--code-border: transparent;
+	--syntax-comment: var(--editor-foreground-muted);
+
+	--properties-background: var(--editor-background-muted);
+	--properties-border: var(--editor-border);
+
+	--viewer-background: color-mix(in srgb, var(--editor-background) 95%, var(--editor-foreground));
+
+	--table-font-size: 0.95em;
+	--table-border: var(--editor-border);
+	--table-header-background: var(--editor-background-muted);
+	--table-header-font-weight: 700;
+	--table-striped-row-background: transparent;
+
+	--tex-title-font-size: 2.2em;
+	--tex-title-font-weight: 400;
+	--tex-title-line-height: 1.25;
+	--tex-author-font-size: 1.05em;
+	--tex-date-font-size: 0.95em;
+	--tex-date-foreground: var(--editor-foreground-muted);
+	--tex-caption-font-size: 0.9em;
+	--tex-caption-font-style: italic;
+	--tex-caption-foreground: var(--editor-foreground-muted);
+	--tex-script-font-size: 0.8em;
+}

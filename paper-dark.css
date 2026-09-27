@@ -1,0 +1,11 @@
+:root {
+	color-scheme: dark;
+
+	--editor-background: #2a2a2a;
+	--code-border: var(--editor-border);
+	--properties-background: var(--editor-background);
+}
+
+.deft-settings-page {
+	--background: #2a2a2a;
+}

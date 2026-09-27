@@ -1,0 +1,15 @@
+:root {
+	color-scheme: light;
+
+	--background: #fafafa;
+	--background-muted: #fafafa;
+	--background-active: color-mix(in srgb, var(--background) 96%, var(--foreground));
+	--border: #e4e4e4;
+	--editor-background: #ffffff;
+	--code-border: var(--editor-border);
+	--properties-background: var(--editor-background);
+}
+
+.deft-settings-page {
+	--background: #ffffff;
+}

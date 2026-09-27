@@ -1,0 +1,94 @@
+:root {
+	color-scheme: light;
+
+	--background: #d9dce2;
+	--background-muted: #e9ebef;
+	--foreground: #1f2329;
+	--foreground-muted: #6b7280;
+	--border: #cfd3da;
+	--link: #2f6fe0;
+	--accent: #0b7a6f;
+
+	--editor-background: #ffffff;
+	--editor-background-muted: #f3f4f6;
+	--editor-border: #e5e7eb;
+}
+
+.deft-sidebar,
+.deft-statusbar {
+	--background: #f1f2f5;
+	--border: #e2e4e9;
+}
+.deft-toolbar {
+	--background: transparent;
+}
+.deft-popover,
+.deft-modal {
+	--background: #ffffff;
+}
+
+.deft-sidebar-left {
+	background: linear-gradient(180deg, #f6f7f9 0%, #eceef2 100%);
+}
+
+.deft-tab {
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	font-size: 11px;
+	padding: 0.3rem 0.65rem;
+	border-radius: var(--border-radius-medium);
+}
+.deft-tab.active {
+	background: var(--accent);
+	color: var(--accent-foreground);
+}
+
+.deft-tree-row.selected {
+	border-radius: 0;
+	box-shadow: inset 3px 0 0 var(--accent);
+}
+
+.deft-icon-button {
+	border-radius: 999px;
+}
+.deft-icon-button.active {
+	background: var(--accent);
+	color: var(--accent-foreground);
+}
+
+.deft-menu {
+	border-radius: 12px;
+	padding: 0.4rem;
+}
+
+.deft-modal {
+	border-top: 3px solid var(--accent);
+}
+
+.deft-statusbar {
+	font-family: var(--font-family-monospace);
+	font-size: 11px;
+	margin: 0 8px 8px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.deft-breadcrumbs {
+	border-bottom: 1px dashed var(--editor-border);
+}
+
+.deft-workspace {
+	gap: 8px;
+	padding: 8px;
+}
+.deft-sidebar {
+	border: none;
+	border-radius: 12px;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+.deft-editor {
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
