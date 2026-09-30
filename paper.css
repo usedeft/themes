@@ -1,4 +1,9 @@
 :root {
+	--code-border: var(--editor-border);
+	--properties-background: var(--editor-background);
+}
+
+:root[data-mode='light'] {
 	color-scheme: light;
 
 	--background: #fafafa;
@@ -6,10 +11,16 @@
 	--background-active: color-mix(in srgb, var(--background) 96%, var(--foreground));
 	--border: #e4e4e4;
 	--editor-background: #ffffff;
-	--code-border: var(--editor-border);
-	--properties-background: var(--editor-background);
+}
+:root[data-mode='light'] .deft-settings-page {
+	--background: #ffffff;
 }
 
-.deft-settings-page {
-	--background: #ffffff;
+:root[data-mode='dark'] {
+	color-scheme: dark;
+
+	--editor-background: #2a2a2a;
+}
+:root[data-mode='dark'] .deft-settings-page {
+	--background: #2a2a2a;
 }

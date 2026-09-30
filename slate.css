@@ -1,10 +1,10 @@
-:root {
+:root[data-mode='light'] {
 	color-scheme: light;
 
 	--background: #d9dce2;
 	--background-muted: #e9ebef;
 	--foreground: #1f2329;
-	--foreground-muted: #6b7280;
+	--foreground-muted: #626977;
 	--border: #cfd3da;
 	--link: #2f6fe0;
 	--accent: #0b7a6f;
@@ -14,21 +14,69 @@
 	--editor-border: #e5e7eb;
 }
 
-.deft-sidebar,
-.deft-statusbar {
+:root[data-mode='light'] .deft-sidebar,
+:root[data-mode='light'] .deft-statusbar {
 	--background: #f1f2f5;
 	--border: #e2e4e9;
 }
-.deft-toolbar {
-	--background: transparent;
-}
-.deft-popover,
-.deft-modal {
+:root[data-mode='light'] .deft-popover,
+:root[data-mode='light'] .deft-modal {
 	--background: #ffffff;
 }
 
-.deft-sidebar-left {
+:root[data-mode='light'] .deft-sidebar-left {
 	background: linear-gradient(180deg, #f6f7f9 0%, #eceef2 100%);
+}
+
+:root[data-mode='light'] .deft-statusbar,
+:root[data-mode='light'] .deft-sidebar,
+:root[data-mode='light'] .deft-editor {
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+:root[data-mode='dark'] {
+	color-scheme: dark;
+
+	--background: #101216;
+	--background-muted: #2c3038;
+	--foreground: #e4e7ec;
+	--foreground-muted: #9aa3b2;
+	--border: #353a44;
+	--link: #6ea8fe;
+	--error: #f47174;
+	--accent: #4fd1c5;
+	--accent-foreground: #1b1e24;
+
+	--editor-background: #282c34;
+	--editor-background-muted: #31363f;
+	--editor-border: #3a3f4a;
+}
+
+:root[data-mode='dark'] .deft-sidebar,
+:root[data-mode='dark'] .deft-statusbar {
+	--background: #1b1e24;
+	--border: #2c3038;
+}
+:root[data-mode='dark'] .deft-popover {
+	--background: #2c3038;
+	--background-active: #363b45;
+}
+:root[data-mode='dark'] .deft-modal {
+	--background: #262a31;
+}
+
+:root[data-mode='dark'] .deft-sidebar-left {
+	background: linear-gradient(180deg, #1b1e24 0%, #15171c 100%);
+}
+
+:root[data-mode='dark'] .deft-statusbar,
+:root[data-mode='dark'] .deft-sidebar,
+:root[data-mode='dark'] .deft-editor {
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.deft-toolbar {
+	background: transparent;
 }
 
 .deft-tab {
@@ -71,7 +119,6 @@
 	margin: 0 8px 8px;
 	border: none;
 	border-radius: 10px;
-	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 .deft-breadcrumbs {
@@ -81,14 +128,13 @@
 .deft-workspace {
 	gap: 8px;
 	padding: 8px;
+	border-top: none;
 }
 .deft-sidebar {
 	border: none;
 	border-radius: 12px;
-	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 .deft-editor {
 	border-radius: 12px;
 	overflow: hidden;
-	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }

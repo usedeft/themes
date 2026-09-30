@@ -2,8 +2,8 @@
 	color-scheme: light;
 
 	--editor-font-family:
-		'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, 'Noto Serif', 'DejaVu Serif',
-		serif;
+		'Literata Variable', 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia,
+		'Noto Serif', 'DejaVu Serif', serif;
 	--editor-font-size: 17px;
 	--editor-line-height: 1.65;
 
@@ -43,11 +43,6 @@
 	--syntax-constant: #9c3694;
 }
 
-.deft-sidebar {
-	--background: #e4e0d7;
-	--background-active: #d8d3c7;
-	--border: #cfc9bc;
-}
 .deft-popover,
 .deft-modal {
 	--background: #fbf8f1;
