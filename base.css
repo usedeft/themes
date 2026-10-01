@@ -113,3 +113,56 @@
 	--tex-caption-foreground: var(--editor-foreground-muted);
 	--tex-script-font-size: 0.8em;
 }
+
+:root[data-mode='light'] {
+	color-scheme: light;
+
+	--background: #ffffff;
+	--background-muted: #f5f5f5;
+	--foreground: #1a1a1a;
+	--foreground-muted: #6b6b6b;
+	--border: #e0e0e0;
+	--link: #2b6cb0;
+
+	--error: #c0392b;
+	--warning: #8f5e00;
+
+	--highlight-background: #ffeb3b;
+
+	--syntax-keyword: #7c3aed;
+	--syntax-string: #2f7d3f;
+	--syntax-number: #a84e08;
+	--syntax-function: #2b6cb0;
+	--syntax-constant: #ad3da4;
+	--syntax-type: #0f766e;
+
+	--box-shadow-large:
+		0 1px 2px rgba(15, 15, 15, 0.04), 0 8px 24px rgba(15, 15, 15, 0.12),
+		0 24px 48px rgba(15, 15, 15, 0.08);
+}
+
+:root[data-mode='dark'] {
+	color-scheme: dark;
+
+	--background: #1e1e1e;
+	--background-muted: #252525;
+	--foreground: #e8e8e8;
+	--foreground-muted: #9a9a9a;
+	--border: #3a3a3a;
+	--link: #63b3ed;
+
+	--error: #ec5a5f;
+	--warning: #d9a441;
+
+	--highlight-background: #8a7a00;
+
+	--syntax-keyword: #c792ea;
+	--syntax-string: #9ece6a;
+	--syntax-number: #ff9e64;
+	--syntax-function: #63b3ed;
+	--syntax-constant: #dc7ce0;
+	--syntax-type: #4ec9b0;
+
+	--box-shadow-large:
+		0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.45), 0 24px 48px rgba(0, 0, 0, 0.35);
+}

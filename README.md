@@ -1,12 +1,4 @@
-# Deft themes
-
-One `.css` file per theme, in Settings > Appearance > Open Themes Folder. Unset tokens fall back to the base files.
-
-## Light and dark
-
-A theme with one mode sets `color-scheme: light` or `color-scheme: dark` on `:root`, and shows in that mode whatever Color Scheme is set to.
-
-A theme with both modes puts each mode's tokens and rules under the `data-mode` attribute the app sets on the root, each block with its own `color-scheme`. Rules outside them apply in both modes. The Color Scheme setting then picks the mode. A mode counts only if its block is on `:root` and sets `color-scheme`: a plain `:root` block without it, beside one `data-mode` block, leaves the theme with that one mode.
+# Theming Deft
 
 Three font families are bundled: `'Inter Variable'`, `'Lilex Variable'` and `'Literata Variable'`. A theme can load its own fonts and images with a relative `url()` to files beside it.
 
@@ -14,22 +6,25 @@ Three font families are bundled: `'Inter Variable'`, `'Lilex Variable'` and `'Li
 :root {
 	--font-family: 'Inter Variable', sans-serif;
 }
+```
+
+## Light and dark
+
+```css
 :root[data-mode='light'] {
 	color-scheme: light;
 	--background: #ffffff;
 }
+
 :root[data-mode='dark'] {
 	color-scheme: dark;
 	--background: #1e1e1e;
 }
+
 :root[data-mode='dark'] .deft-sidebar {
 	--background: #181818;
 }
 ```
-
-Keep colors out of the plain `:root` block: a token set there and not in the dark block carries into dark mode instead of falling back to the dark base.
-
-The app also sets `--editor-max-width` on `:root` from the Editor width setting (a length, or `100%` at Full Width) for a theme to read.
 
 ## Tokens
 
@@ -49,7 +44,7 @@ The app also sets `--editor-max-width` on `:root` from the Editor width setting 
 - `--accent`
 - `--accent-tint`
 - `--accent-tint-hover`
-- `--accent-foreground`: text on `--accent`
+- `--accent-foreground`
 
 ### Chrome
 
@@ -59,14 +54,16 @@ The app also sets `--editor-max-width` on `:root` from the Editor width setting 
 - `--border-radius-medium`
 - `--border-radius-large`
 - `--icon-stroke-width`
-- `--background-active`: hovered or current row
-- `--overlay-background`: behind modals
+- `--background-active`
+- `--overlay-background`
 - `--box-shadow-large`
 - `--box-shadow-medium`
 - `--box-shadow-small`
 
 ### Editor
 
+- `--editor-max-width`
+- `--editor-overlay-width`
 - `--editor-font-family`
 - `--editor-font-size`
 - `--editor-line-height`
@@ -76,11 +73,12 @@ The app also sets `--editor-max-width` on `:root` from the Editor width setting 
 - `--editor-foreground-muted`
 - `--editor-border`
 - `--editor-background-muted`
-- `--viewer-background`: behind PDFs and images
+- `--viewer-background`
+
 
 ### Headings
 
-`N` is the level, 1 to 6.
+`N`: Heading level 1 to 6
 
 - `--heading-font-family`
 - `--heading-font-weight`
@@ -97,7 +95,7 @@ The app also sets `--editor-max-width` on `:root` from the Editor width setting 
 ### Document
 
 - `--highlight-background`
-- `--markup-foreground`: `#`, `**` and other markers
+- `--markup-foreground`
 - `--hr-border`
 - `--blockquote-foreground`
 - `--blockquote-font-style`
@@ -108,7 +106,7 @@ The app also sets `--editor-max-width` on `:root` from the Editor width setting 
 - `--code-background`
 - `--code-inline-background`
 - `--code-border`
-- `--properties-background`: frontmatter
+- `--properties-background`
 - `--properties-border`
 - `--table-font-size`
 - `--table-border`
@@ -141,22 +139,20 @@ The app also sets `--editor-max-width` on `:root` from the Editor width setting 
 
 ## Classes
 
-Classes take tokens too, for just that part. No `!important` needed, except on the find bar, whose own rules outrank a theme's: set tokens on `.deft-popover` there, or scope the rule under `:root[data-mode]`.
-
 ### Window
 
 - `.deft-app`
-- `.deft-workspace`: top border is the rule under the title bar (Windows, macOS)
+- `.deft-workspace`
 - `.deft-sidebar`
 - `.deft-sidebar-left`
 - `.deft-sidebar-right`
 - `.deft-toolbar`
-- `.deft-spacer`: the gap pushing a bar's later items to its far end
+- `.deft-spacer`
 - `.deft-statusbar`
-- `.deft-sync-footer`: the sync row under the file tree
-- `.deft-main`: holds `.deft-editor` and its corner buttons, so size this to narrow the editor
-- `.deft-editor-buttons`: the corner buttons; `--editor-overlay-width` is their width
+- `.deft-sync-footer`
+- `.deft-main`
 - `.deft-editor`
+- `.deft-editor-buttons`
 
 ### Note
 
@@ -165,8 +161,11 @@ Classes take tokens too, for just that part. No `!important` needed, except on t
 
 ### File tree
 
-- `.deft-tree`: `.drag-over` while a drag would drop into the top level
-- `.deft-tree-row`: `.selected` when open, `.drag-over` while a drag would drop into it
+- `.deft-tree`
+- `.deft-tree.drag-over`
+- `.deft-tree-row`
+- `.deft-tree-row.selected`
+- `.deft-tree-row.drag-over`
 - `.deft-tree-folder`
 - `.deft-tree-project`
 - `.deft-tree-file`
@@ -179,19 +178,23 @@ Classes take tokens too, for just that part. No `!important` needed, except on t
 - `.deft-tasks`
 - `.deft-bookmarks`
 - `.deft-problems`
-- `.deft-panel-item`: `.active` current heading, `.done` checked task
+- `.deft-panel-item`
+- `.deft-panel-item.active`
+- `.deft-panel-item.done`
 
 ### Controls
 
-- `.deft-tab`: `.active` when shown
-- `.deft-icon-button`: `.active` when toggled
+- `.deft-tab`
+- `.deft-tab.active`
+- `.deft-icon-button`
+- `.deft-icon-button.active`
 - `.deft-button`
 - `.deft-button-primary`
 - `.deft-input`
 
 ### Popovers and modals
 
-- `.deft-popover`: menus, find panel, tooltips, viewer controls
+- `.deft-popover`
 - `.deft-find`
 - `.deft-menu`
 - `.deft-menu-item`
