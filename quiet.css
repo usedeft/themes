@@ -79,14 +79,14 @@
 	--border: var(--accent-tint);
 }
 @media (hover: hover) {
-	.deft-toolbar:not(:hover, :has(:focus-visible)) .deft-icon-button,
-	.deft-toolbar:not(:hover, :has(:focus-visible)) .deft-tab,
+	.deft-app:not(.deft-touch) .deft-toolbar:not(:hover, :has(:focus-visible)) .deft-icon-button,
+	.deft-app:not(.deft-touch) .deft-toolbar:not(:hover, :has(:focus-visible)) .deft-tab,
 	.deft-editor-buttons:not(:hover, :has(:focus-visible)) .deft-icon-button,
-	.deft-statusbar:not(:hover, :has(:focus-visible)) > * {
+	.deft-app:not(.deft-touch) .deft-statusbar:not(:hover, :has(:focus-visible)) > * {
 		opacity: 0;
 	}
 }
-.deft-statusbar {
+.deft-app:not(.deft-touch) .deft-statusbar {
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -94,7 +94,7 @@
 	z-index: 10;
 }
 @media (hover: hover) {
-	.deft-statusbar:not(:hover, :has(:focus-visible)) {
+	.deft-app:not(.deft-touch) .deft-statusbar:not(:hover, :has(:focus-visible)) {
 		transform: translateY(calc(100% - 6px));
 	}
 }

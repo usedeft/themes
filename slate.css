@@ -130,6 +130,13 @@
 	padding: 8px;
 	border-top: none;
 }
+.deft-touch .deft-statusbar {
+	margin: 8px 0 0;
+}
+.deft-phone .deft-sidebar {
+	border-radius: 0;
+	box-shadow: none;
+}
 .deft-sidebar {
 	border: none;
 	border-radius: 12px;

@@ -142,6 +142,8 @@ Three font families are bundled: `'Inter Variable'`, `'Lilex Variable'` and `'Li
 ### Window
 
 - `.deft-app`
+- `.deft-touch`
+- `.deft-phone`
 - `.deft-workspace`
 - `.deft-sidebar`
 - `.deft-sidebar-left`
