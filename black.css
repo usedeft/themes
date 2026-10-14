@@ -1,0 +1,35 @@
+:root {
+	color-scheme: dark;
+
+	--background: #000000;
+	--background-muted: #141414;
+	--foreground: #d4d4d4;
+	--foreground-muted: #8a8a8a;
+	--border: #262626;
+	--link: #8ab4f8;
+	--accent: #9a9a9a;
+	--accent-foreground: #000000;
+
+	--background-active: #1a1a1a;
+	--overlay-background: rgba(0, 0, 0, 0.6);
+	--heading-foreground: #f0f0f0;
+	--markup-foreground: #5a5a5a;
+	--highlight-background: #6b5f1a;
+	--code-background: #111111;
+	--code-border: #262626;
+	--properties-background: #0e0e0e;
+	--viewer-background: #000000;
+	--table-header-background: #141414;
+
+	--syntax-keyword: #b3a5cc;
+	--syntax-string: #d0a097;
+	--syntax-number: #cfae84;
+	--syntax-function: #8ab4f8;
+	--syntax-constant: #c39fbf;
+	--syntax-type: #96c2b5;
+}
+.deft-menu {
+	--background: #141414;
+	--background-muted: #1e1e1e;
+	--border: #2e2e2e;
+}

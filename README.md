@@ -75,7 +75,6 @@ Three font families are bundled: `'Inter Variable'`, `'Lilex Variable'` and `'Li
 - `--editor-background-muted`
 - `--viewer-background`
 
-
 ### Headings
 
 `N`: Heading level 1 to 6
@@ -160,6 +159,8 @@ Three font families are bundled: `'Inter Variable'`, `'Lilex Variable'` and `'Li
 
 - `.deft-breadcrumbs`
 - `.deft-note-title`
+- `.deft-viewer-bar`
+- `.deft-viewer-bar.docked`
 
 ### File tree
 

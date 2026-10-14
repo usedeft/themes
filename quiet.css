@@ -66,13 +66,13 @@
 :root {
 	--viewer-background: var(--editor-background);
 }
-.deft-toolbar .deft-spacer {
+.deft-app:not(.deft-touch) .deft-toolbar .deft-spacer {
 	order: 1;
 }
-.deft-sidebar-right .deft-toolbar .deft-spacer {
+.deft-app:not(.deft-touch) .deft-sidebar-right .deft-toolbar .deft-spacer {
 	order: -1;
 }
-.deft-sync-footer .deft-spacer {
+.deft-app:not(.deft-touch) .deft-sync-footer .deft-spacer {
 	flex: none;
 }
 .deft-sidebar .drag-over {
@@ -113,6 +113,9 @@
 	}
 }
 .deft-editor .deft-find.deft-popover {
+	border-bottom: none;
+}
+.deft-viewer-bar.docked {
 	border-bottom: none;
 }
 .deft-editor > .deft-breadcrumbs {
