@@ -56,6 +56,7 @@ Three font families are bundled: `'Inter Variable'`, `'Lilex Variable'` and `'Li
 - `--icon-stroke-width`
 - `--background-active`
 - `--overlay-background`
+- `--system-bar-background`
 - `--box-shadow-large`
 - `--box-shadow-medium`
 - `--box-shadow-small`
@@ -193,6 +194,7 @@ Three font families are bundled: `'Inter Variable'`, `'Lilex Variable'` and `'Li
 - `.deft-icon-button.active`
 - `.deft-button`
 - `.deft-button-primary`
+- `.deft-button-filled`
 - `.deft-input`
 
 ### Popovers and modals

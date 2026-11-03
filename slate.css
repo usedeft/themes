@@ -75,6 +75,10 @@
 	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
+:root {
+	--system-bar-background: transparent;
+}
+
 .deft-toolbar {
 	background: transparent;
 }
@@ -132,6 +136,17 @@
 }
 .deft-touch .deft-statusbar {
 	margin: 8px 0 0;
+}
+.deft-phone .deft-statusbar {
+	height: auto;
+	padding-bottom: 0;
+	margin-bottom: -4px;
+}
+.deft-phone .deft-statusbar[role='toolbar'] {
+	margin-bottom: 0;
+}
+.deft-phone .deft-editor > .deft-breadcrumbs {
+	background: var(--editor-background);
 }
 .deft-phone .deft-sidebar {
 	border-radius: 0;
