@@ -1,5 +1,6 @@
 :root {
 	--accent: #268bd2;
+	--viewer-background: var(--editor-background);
 
 	--syntax-keyword: #b58900;
 	--syntax-string: #2aa198;
@@ -52,4 +53,80 @@
 }
 :root[data-mode='dark'] .deft-settings-page {
 	--background: #073642;
+}
+:root[data-mode='dark'] .deft-phone .deft-sidebar {
+	--background-active: color-mix(in srgb, var(--editor-background) 92%, var(--foreground));
+}
+
+.deft-app:not(.deft-phone) .deft-sidebar,
+.deft-app:not(.deft-phone) .deft-toolbar,
+.deft-app:not(.deft-phone) .deft-sync-footer,
+.deft-app:not(.deft-phone) .deft-statusbar,
+.deft-app:not(.deft-phone) .deft-workspace,
+.deft-app:not(.deft-phone) .deft-editor > .deft-breadcrumbs,
+.deft-app:not(.deft-phone) .deft-viewer-bar.docked,
+.deft-app:not(.deft-phone) .deft-editor .deft-find.deft-popover {
+	border-color: transparent;
+}
+:root[data-mode='light'] .deft-app:not(.deft-phone) .deft-statusbar {
+	--background: #e4dfcc;
+}
+:root[data-mode='dark'] .deft-app:not(.deft-phone) .deft-statusbar {
+	--background: #001a20;
+}
+.deft-app:not(.deft-touch) .deft-toolbar,
+.deft-app:not(.deft-touch) .deft-sync-footer {
+	position: relative;
+	z-index: 1;
+}
+.deft-app:not(.deft-touch) .deft-editor:has(> .deft-breadcrumbs)::before {
+	content: '';
+	position: absolute;
+	top: var(--toolbar-height);
+	left: 0;
+	right: var(--editor-inset, 1.5rem);
+	height: 1.5rem;
+	z-index: 2;
+	pointer-events: none;
+	background: linear-gradient(var(--editor-background), transparent);
+}
+@supports (animation-timeline: scroll()) {
+	.deft-app:not(.deft-touch) .deft-sidebar {
+		timeline-scope: --list-scroll;
+	}
+	.deft-app:not(.deft-touch) .deft-tree,
+	.deft-app:not(.deft-touch) .deft-panel {
+		scroll-timeline: --list-scroll block;
+	}
+	.deft-app:not(.deft-touch) .deft-toolbar::after,
+	.deft-app:not(.deft-touch) .deft-sync-footer::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 1.5rem;
+		pointer-events: none;
+		opacity: 0;
+		animation: deft-fade linear both;
+		animation-timeline: --list-scroll;
+	}
+	.deft-app:not(.deft-touch) .deft-toolbar::after {
+		top: 100%;
+		background: linear-gradient(var(--background), transparent);
+		animation-range: 0 1.5rem;
+	}
+	.deft-app:not(.deft-touch) .deft-sync-footer::before {
+		bottom: 100%;
+		background: linear-gradient(transparent, var(--background));
+		animation-direction: reverse;
+		animation-range: calc(100% - 1.5rem) 100%;
+	}
+	@keyframes deft-fade {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
 }

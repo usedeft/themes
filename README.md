@@ -57,6 +57,7 @@ Three font families are bundled: `'Inter Variable'`, `'Lilex Variable'` and `'Li
 - `--background-active`
 - `--overlay-background`
 - `--system-bar-background`
+- `--phone-bar-border`
 - `--box-shadow-large`
 - `--box-shadow-medium`
 - `--box-shadow-small`
@@ -144,6 +145,7 @@ Three font families are bundled: `'Inter Variable'`, `'Lilex Variable'` and `'Li
 - `.deft-app`
 - `.deft-touch`
 - `.deft-phone`
+- `.deft-chrome-hidden`
 - `.deft-workspace`
 - `.deft-sidebar`
 - `.deft-sidebar-left`
@@ -185,6 +187,8 @@ Three font families are bundled: `'Inter Variable'`, `'Lilex Variable'` and `'Li
 - `.deft-panel-item`
 - `.deft-panel-item.active`
 - `.deft-panel-item.done`
+- `.deft-panel-group`
+- `.deft-empty`
 
 ### Controls
 

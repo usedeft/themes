@@ -11,6 +11,8 @@
 
 	--heading-1-border-width: 2px;
 	--blockquote-border-width: 4px;
+
+	--phone-bar-border: var(--border);
 }
 
 :root[data-mode='light'] {

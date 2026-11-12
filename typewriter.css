@@ -1,7 +1,7 @@
 :root {
 	color-scheme: light;
 
-	--font-family: 'Lilex Variable', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+	--editor-font-family: 'Lilex Variable', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 	--editor-font-size: 15px;
 	--editor-line-height: 1.7;
 
@@ -59,6 +59,14 @@
 	--border: #1c1c1c;
 }
 
+.deft-tree,
+.deft-panel,
+.deft-breadcrumbs,
+.deft-statusbar,
+.deft-tab {
+	font-family: var(--editor-font-family);
+}
+
 .deft-tab {
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
@@ -77,11 +85,6 @@
 	outline-color: var(--foreground);
 }
 
-.deft-tree-folder,
-.deft-tree-project {
-	font-variant-caps: all-small-caps;
-	letter-spacing: 0.04em;
-}
 .deft-tree-row.selected,
 .deft-panel-item.active {
 	box-shadow: inset 3px 0 0 var(--accent);
@@ -122,4 +125,11 @@
 }
 .deft-modal {
 	border: 3px double var(--foreground);
+}
+.deft-app:not(.deft-touch) .deft-editor > .deft-breadcrumbs,
+.deft-app:not(.deft-touch) .deft-viewer-bar.docked {
+	background-color: var(--background);
+}
+.deft-app:not(.deft-touch) .deft-editor:not(:has(.deft-note-title)) .deft-find.deft-popover {
+	background-color: #ededeb;
 }
